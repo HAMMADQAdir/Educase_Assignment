@@ -22,19 +22,19 @@ export const addSchool = async (req, res, next) => {
   try {
     const sqlQuery =
       "INSERT INTO schools (name, address, latitude, longitude) VALUES(?,?,?,?)";
-    const row = await db.query(sqlQuery, [
+    const [result] = await db.query(sqlQuery, [
       name,
       address,
       latitude,
       longitude,
     ]);
-    if(row[0].affectedRows === 0){
+    if(result[0].affectedRows === 0){
       return next(errorHandler(409,{message:"Failed to add school"}));
     }
    
     res
       .status(201)
-      .send(new ApiResponse(201, "School added successfully", row));
+      .send(new ApiResponse(201, "School added successfully", {id:result[0].insertId}));
   } catch (error) {
     console.error("Error adding school:", error);
     next(errorHandler(500, { message: error }));
