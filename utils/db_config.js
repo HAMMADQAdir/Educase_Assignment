@@ -9,10 +9,10 @@ const dbConfig = {
   port: process.env.DB_PORT || 3306,
   connectionLimit: 10,
   waitForConnections: true,
-  queueLimit: 0,
+  queueLimit: 1,
 };
 
-console.log("Database configuration:", dbConfig);
+
 const pool = mysql.createPool(dbConfig);
 (async () => {
   try {
