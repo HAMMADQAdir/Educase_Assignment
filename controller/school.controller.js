@@ -28,7 +28,7 @@ export const addSchool = async (req, res, next) => {
       latitude,
       longitude,
     ]);
-    if(result[0].affectedRows === 0){
+    if(result.affectedRows === 0){
       return next(errorHandler(409,{message:"Failed to add school"}));
     }
    
