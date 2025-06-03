@@ -11,6 +11,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 import schoolRoute from './route/school.route.js';
+app.get("/",(req,res)=>{
+    res.send("Welcome to School API");
+})
 app.use("/api/school",schoolRoute);
 
 
