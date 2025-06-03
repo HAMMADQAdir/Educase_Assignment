@@ -34,7 +34,7 @@ export const addSchool = async (req, res, next) => {
    
     res
       .status(201)
-      .send(new ApiResponse(201, "School added successfully", {id:result[0].insertId}));
+      .send(new ApiResponse(201, "School added successfully", {id:result.insertId}));
   } catch (error) {
     console.error("Error adding school:", error);
     next(errorHandler(500, { message: error }));
