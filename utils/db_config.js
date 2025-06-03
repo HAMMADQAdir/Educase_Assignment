@@ -17,7 +17,7 @@ const pool = mysql.createPool(dbConfig);
 (async () => {
   try {
     const connection = await pool.getConnection();
-    connection.query("use school_management");
+
     console.log("Database connected successfully");
     connection.release();
   } catch (error) {
