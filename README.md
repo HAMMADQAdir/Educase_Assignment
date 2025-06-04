@@ -179,6 +179,10 @@ No authentication is required currently.
 ---
 
 ## 🚀 Running the API
+Clone the repo :
+```bash
+  git clone https://github.com/HAMMADQAdir/Educase_Assignment.git
+```
 
 ### ▶️ Development
 
