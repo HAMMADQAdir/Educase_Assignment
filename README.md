@@ -197,26 +197,14 @@ npm start
 ## 🧪 Testing Suggestions (Dummy Payloads)
 
 ```json
-[
-  {
-    "name": "Greenwood High",
-    "address": "123 Hill Road, Dehradun",
-    "latitude": 30.3165,
-    "longitude": 78.0322
-  },
-  {
-    "name": "Delhi Public School",
-    "address": "Sector 45, Noida",
-    "latitude": 28.5355,
-    "longitude": 77.3910
-  },
+
   {
     "name": "St. Xavier's High",
     "address": "Pali Hill, Bandra, Mumbai",
     "latitude": 19.0606,
     "longitude": 72.8363
   }
-]
+
 ```
 
 ---
