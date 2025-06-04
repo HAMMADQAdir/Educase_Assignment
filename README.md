@@ -183,12 +183,14 @@ No authentication is required currently.
 ### ▶️ Development
 
 ```bash
+npm i
 npm run dev
 ```
 
 ### 🚢 Production
 
 ```bash
+npm i
 npm start
 ```
 
